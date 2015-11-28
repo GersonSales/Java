@@ -4,7 +4,8 @@ public class ClasseTeste<Teste> {
 
 	private Teste teste;
 
-	public ClasseTeste() {
+	public ClasseTeste(Teste teste) {
+		this.teste = teste;
 	}
 
 	public Teste getTeste() {
