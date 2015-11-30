@@ -49,6 +49,22 @@ public class No<Tipo> implements Comparable<No<Tipo>> {
 
 	}
 	
+	
+	public No<Tipo> buscaValor(Tipo valor) {
+		if (getValor().compareTo(valor) > 0) {
+			if (getEsquerda() != null) {
+				return getEsquerda().buscaValor(valor);
+			}
+		}else if (getValor().compareTo(valor) == 0) {
+			return this;
+		}else {
+			if (getDireita() != null) {
+				return getDireita().buscaValor(valor);
+			}
+		}
+		return null;
+	}
+	
 	public void emOrdem() {
 		if (getEsquerda() != null) {
 			getEsquerda().emOrdem();

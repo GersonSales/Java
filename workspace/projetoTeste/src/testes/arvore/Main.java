@@ -17,6 +17,8 @@ public class Main {
 			raiz.insere(no9);
 
 			raiz.emOrdem();
+			
+			System.out.println(raiz.buscaValor(51));
 
 		} catch (Exception erro) {
 			erro.printStackTrace();
