@@ -4,6 +4,6 @@ public class Main {
 	public static void main(String[] args) {
 		FamiliaAraujo gerson = new Integrante("Gerson");
 		
-		System.out.println(gerson.getSobrenome());
+		System.out.println(gerson.getNomeCompleto()); //Gerson Araujo
 	}
 }
