@@ -1,36 +1,36 @@
 package testes.arvore;
 
-public class No<Tipo> implements Comparable<No<Tipo>> {
+public class No implements Comparable<No> {
 
-	private Comparable<Tipo> valor;
-	private No<Tipo> esquerda;
-	private No<Tipo> direita;
+	private Comparable<Object> valor;
+	private No esquerda;
+	private No direita;
 
-	public No(Comparable<Tipo> valor) {
+	public No(Comparable<Object> valor) {
 		this.valor = valor;
 	}
 
-	public Comparable<Tipo> getValor() {
+	public Comparable<Object> getValor() {
 		return this.valor;
 	}
 
-	public No<Tipo> getEsquerda() {
+	public No getEsquerda() {
 		return this.esquerda;
 	}
 	
-	public void setEsquerda(No<Tipo> esquerda) {
+	public void setEsquerda(No esquerda) {
 		this.esquerda = esquerda;
 	}
 	
-	public No<Tipo> getDireita() {
+	public No getDireita() {
 		return direita;
 	}
 
-	public void setDireita(No<Tipo> direita) {
+	public void setDireita(No direita) {
 		this.direita = direita;
 	}
 
-	public void insere(No<Tipo> novoNo) {
+	public void insere(No novoNo) {
 		if (compareTo(novoNo) > 0) {
 			if (getEsquerda() != null) {
 				getEsquerda().insere(novoNo);
@@ -50,7 +50,7 @@ public class No<Tipo> implements Comparable<No<Tipo>> {
 	}
 	
 	
-	public No<Tipo> buscaValor(Tipo valor) {
+	public No buscaValor(Comparable<Object> valor) {
 		if (getValor().compareTo(valor) > 0) {
 			if (getEsquerda() != null) {
 				return getEsquerda().buscaValor(valor);
@@ -83,10 +83,9 @@ public class No<Tipo> implements Comparable<No<Tipo>> {
 		return "(" + getValor() + ")";
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
-	public int compareTo(No<Tipo> outroNo) {
-		return getValor().compareTo((Tipo)outroNo.getValor());
+	public int compareTo(No outroNo) {
+		return getValor().compareTo(outroNo.getValor());
 	}
 
 }
