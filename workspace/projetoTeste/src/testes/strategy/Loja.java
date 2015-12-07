@@ -4,7 +4,7 @@ public class Loja {
 
 	private Double peso;
 	private Double distancia;
-
+	
 	public Loja() {
 		this.peso = 0d;
 		this.distancia = 0d;

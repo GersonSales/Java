@@ -13,7 +13,7 @@ public class Main {
 
 		valorFrete = loja.simularFrete("PAC");
 		System.out.println("PAC: " + valorFrete);
-
+		
 	}
 
 }
