@@ -8,13 +8,11 @@ public class Loja {
 	public Loja() {
 		this.peso = 0d;
 		this.distancia = 0d;
-
 	}
 
 	public void cadastrarItem(Double peso, Double distancia) {
 		this.peso = peso;
 		this.distancia = distancia;
-
 	}
 
 	public Double simularFrete(String tipoFrete) {
