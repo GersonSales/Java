@@ -16,8 +16,7 @@ public class Loja {
 	}
 
 	public Double simularFrete(String tipoFrete) {
-		return TipoFrete.valueOf(tipoFrete).calculadorFrete()
-				.calculaFrete(peso, distancia);
+		return TipoFrete.valueOf(tipoFrete).calcularFrete(peso, distancia);
 	}
 
 }

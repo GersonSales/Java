@@ -4,23 +4,23 @@ public enum TipoFrete {
 
 	SEDEX {
 		@Override
-		public CalculadorFrete calculadorFrete() {
-			return new Sedex();
+		public Double calcularFrete(Double peso, Double distancia) {
+			return new Sedex().calculaFrete(peso, distancia);
 		}
 	},
 	PAC {
 		@Override
-		public CalculadorFrete calculadorFrete() {
-			return new PAC();
+		public Double calcularFrete(Double peso, Double distancia) {
+			return new PAC().calculaFrete(peso, distancia);
 		}
 	},
 	ESEDEX {
 		@Override
-		public CalculadorFrete calculadorFrete() {
-			return new ESedex();
+		public Double calcularFrete(Double peso, Double distancia) {
+			return new ESedex().calculaFrete(peso, distancia);
 		}
 	};
 
-	public abstract CalculadorFrete calculadorFrete();
+	public abstract Double calcularFrete(Double peso, Double distancia);
 
 }
