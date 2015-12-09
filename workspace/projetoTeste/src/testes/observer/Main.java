@@ -41,11 +41,9 @@ public class Main {
 		System.out.println("<Luiza: \n" + luiza.getNotificacoes() + ">");
 		System.out.println("<Marcos: \n" +marcos.getNotificacoes() + ">");
 		
-		
-
-		
-		
-		
 
 	}
+	
+	
+	
 }
