@@ -9,7 +9,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 
 public aspect Aspecto {
 
-	pointcut construtor() : call(*.new(..));
+	pointcut construtor() : call(*.new(..)) && !within(Aspecto);
 
 	before() : construtor() {
 		Object[] argumentos = thisJoinPoint.getArgs();
@@ -19,9 +19,14 @@ public aspect Aspecto {
 		for (int i = 0; i < annotations.length; i++) {
 			Annotation[] annotation = annotations[i];
 			for (int j = 0; j < annotation.length; j++) {
-				if(annotation[j] instanceof NaoNulo) {
+				if (annotation[j] instanceof NaoNulo) {
 					if (argumentos[i] == null) {
 						throw new IllegalArgumentException("Nao pode ser nulo!");
+					}
+				} else if (annotation[j] instanceof NaoNegativo) {
+					if ((Integer) argumentos[i] < 0) {
+						throw new IllegalArgumentException("Nao pode ser negativo!");
+
 					}
 				}
 			}
@@ -43,6 +48,11 @@ public aspect Aspecto {
 				if (annotation[j] instanceof NaoNulo) {
 					if (argumentos[i] == null) {
 						throw new IllegalArgumentException("Nao pode ser nulo!");
+
+					}
+				} else if (annotation[j] instanceof NaoNegativo) {
+					if ((Integer) argumentos[i] < 0) {
+						throw new IllegalArgumentException("Nao pode ser negativo!");
 
 					}
 				}
