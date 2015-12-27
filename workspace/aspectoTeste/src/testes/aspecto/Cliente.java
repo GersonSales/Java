@@ -9,11 +9,12 @@ public class Cliente {
 	@Test 
 	public void criacaoPessoa() {
 		try {
-			@SuppressWarnings("unused")
+			//@SuppressWarnings("unused")
 			Pessoa gerson = new Pessoa(null, 20);
+			System.out.println(gerson);
 			Assert.fail();
 		}catch (Exception erro){ 
-			Assert.assertEquals("Nao pode ser nulo!", erro.getMessage());
+			Assert.assertEquals("Nome nao pode ser nulo!", erro.getMessage());
 			
 		}
 		
@@ -23,7 +24,7 @@ public class Cliente {
 			Pessoa gerson = new Pessoa("Gerson", null);
 			Assert.fail();
 		}catch(Exception erro) {
-			Assert.assertEquals("Nao pode ser nulo!", erro.getMessage());
+			Assert.assertEquals("Idade nao pode ser nulo!", erro.getMessage());
 
 		}
 		
@@ -32,7 +33,7 @@ public class Cliente {
 			Pessoa gerson = new Pessoa("Gerson", -20);
 			Assert.fail();
 		}catch (Exception erro){ 
-			Assert.assertEquals("Nao pode ser negativo!", erro.getMessage());
+			Assert.assertEquals("Idade nao pode ser negativo!", erro.getMessage());
 			
 		}
 		

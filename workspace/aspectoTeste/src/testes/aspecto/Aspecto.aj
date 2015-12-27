@@ -21,11 +21,24 @@ public aspect Aspecto {
 			for (int j = 0; j < annotation.length; j++) {
 				if (annotation[j] instanceof NaoNulo) {
 					if (argumentos[i] == null) {
-						throw new IllegalArgumentException("Nao pode ser nulo!");
+						String mensagem = "";
+						try {
+							NaoNulo naoNulo = (NaoNulo) annotation[j];
+							mensagem = naoNulo.value();
+						} catch (Exception erro) {
+						}
+						throw new IllegalArgumentException(mensagem + " nao pode ser nulo!");
+
 					}
 				} else if (annotation[j] instanceof NaoNegativo) {
 					if ((Integer) argumentos[i] < 0) {
-						throw new IllegalArgumentException("Nao pode ser negativo!");
+						String mensagem = "";
+						try {
+							NaoNegativo naoNegativo = (NaoNegativo) annotation[j];
+							mensagem = naoNegativo.value();
+						} catch (Exception erro) {
+						}
+						throw new IllegalArgumentException(mensagem + " nao pode ser negativo!");
 
 					}
 				}
