@@ -13,7 +13,12 @@ public class MainExcercicios {
 		System.out.println();
 		
 		System.out.println("exercicio2: ");
-		main.excercicio2();
+		main.exercicio2();
+		
+		System.out.println();
+		
+		System.out.println("exercicio3: ");
+		main.exercicio3();
 
 		
 
@@ -25,8 +30,19 @@ public class MainExcercicios {
 		System.out.println(gerson.getNome());
 	}
 	
-	public void excercicio2() {
+	public void exercicio2() {
 		Produto caneta = new Produto("Caneta", 0.99d);
 		System.out.println(caneta);
+	}
+	
+	
+	public void exercicio3() {
+		Cliente gerson = new Cliente("Gerson");
+		gerson.setCodigo("1234");
+		gerson.setEndereco("r: Dias Goncalves");
+		
+		System.out.println(gerson.getCodigo());
+		System.out.println(gerson.getEndereco());
+		
 	}
 }
