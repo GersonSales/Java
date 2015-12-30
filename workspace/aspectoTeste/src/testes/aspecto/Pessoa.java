@@ -24,5 +24,10 @@ public class Pessoa {
 	public Integer getIdade() {
 		return this.idade;
 	}
+	
+	@Override
+	public String toString() {
+		return getNome() + "(" + getIdade() + ")";
+	}
 
 }

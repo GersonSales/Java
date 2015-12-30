@@ -47,9 +47,9 @@ public aspect Aspecto {
 
 	}
 
-	pointcut required() : execution(* *.*(..));
+	pointcut metodos() : execution(* *.*(..));
 
-	before(): required() {
+	before(): metodos() {
 		Object[] argumentos = thisJoinPoint.getArgs();
 
 		MethodSignature methodSignature = (MethodSignature) thisJoinPoint.getSignature();
@@ -74,5 +74,11 @@ public aspect Aspecto {
 		}
 
 	}
-
+	
+	
+	pointcut setNome() : execution(void *.setNome(..));
+	
+	after() : setNome() {
+		System.out.println("Alteracao realizada em " + thisJoinPoint.getTarget());
+	}
 }

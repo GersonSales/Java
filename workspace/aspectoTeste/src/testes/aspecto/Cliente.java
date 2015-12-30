@@ -45,6 +45,37 @@ public class Cliente {
 			Assert.fail();
 			
 		}
+		
 	}
+	
+	
+	@Test
+	public void alteracaoPessoa() {
+		try {
+			Pessoa gerson = new Pessoa("Gerson", 20);
+			gerson.setNome("Gerson Sales");
+		}catch (Exception erro) {
+			System.out.println(erro.getMessage());
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
