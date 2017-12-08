@@ -27,6 +27,9 @@ bin/
 gen/
 out/
 
+# ConversorDeMoedas
+*/gradle/
+
 # Gradle files
 */.gradle/
 */build/
