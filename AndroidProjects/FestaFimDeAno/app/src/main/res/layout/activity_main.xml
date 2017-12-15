@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nokia.cap.festafimdeano.views.MainActivity">
+
+
+    <TextView
+        android:id="@+id/label_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hoje"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_15_11_2017"
+        android:layout_toRightOf="@id/label_today"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/label_today"
+        android:background="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/remaining_days_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dias_restantes_para_o_fim_de_ano"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/remaining_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_231_dias"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"/>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="90dp"
+
+        android:layout_height="wrap_content"
+        android:text="@string/nao_confirmado"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/text_white_color"/>
+
+
+
+</RelativeLayout>

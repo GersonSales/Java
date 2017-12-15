@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FestaFimDeAno</string>
+    <string name="voce_ir_participar">Você irá participar?</string>
+    <string name="nao_confirmado">Confirmar</string>
+    <string name="confirmado_nao">Não</string>
+    <string name="confirmado_sim">Sim</string>
+    <string name="_15_11_2017">15/11/2017</string>
+    <string name="hoje">Hoje:</string>
+    <string name="dias_restantes_para_o_fim_de_ano">Dias restantes para o fim de ano:</string>
+    <string name="_231_dias">231 Dias</string>
+    <string name="tudo_bem">Tudo bem?</string>
+    <string name="ola">Olá</string>
+    <string name="irei_participar">Irei participar</string>
+</resources>
