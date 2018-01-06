@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExercicioAula10</string>
+    <string name="landscape">Landscape</string>
+    <string name="portrait">Portrait</string>
+    <string name="land_port">Land/Port</string>
+    <string name="about">about</string>
+    <string name="main">Main</string>
+</resources>

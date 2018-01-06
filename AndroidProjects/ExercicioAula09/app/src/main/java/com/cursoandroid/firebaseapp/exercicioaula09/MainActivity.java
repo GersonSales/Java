@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mViewHolder = new ViewHolder();
         mViewHolder.sumButton = findViewById(R.id.mainActivity_button);
 
+
         mViewHolder.sumButton.setOnClickListener(this);
 
         mViewHolder.resultFragment = fragmentManager.findFragmentByTag(ResultFragment.TAG);
