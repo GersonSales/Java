@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExercicioAula09</string>
+    <string name="hello_main_activity">Hello Main Activity</string>
+    <string name="click_me">Click me</string>
+    <string name="hello_subactivity">Hello SubActivity</string>
+    <string name="hello_subActivity">Hello SubActivivty</string>
+</resources>
