@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sum with Fragment</string>
+    <string name="hello_main_activity">Hello Main Activity</string>
+    <string name="click_me">Click me</string>
+    <string name="hello_subactivity">Hello SubActivity</string>
+    <string name="hello_subActivity">Hello SubActivivty</string>
+    <string name="sum">Somar</string>
+    <string name="zero">0</string>
+    <string name="sum_values">Somar valores</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="result">Resultado</string>
+    <string name="click_on">Clique em</string>
+    <string name="press_the_button">Aperte o botão</string>
+    <string name="landscape">Landscape</string>
+    <string name="subtract">Subtrair</string>
+</resources>

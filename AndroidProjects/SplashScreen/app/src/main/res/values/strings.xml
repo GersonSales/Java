@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Splash Screen</string>
+<<<<<<< HEAD
     <string name="title_activity_tutorial_tab">TutorialTab</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+=======
+    <string name="viewpager_text">ViewPager</string>
+    <string name="skip">Pular</string>
+>>>>>>> e5ed65065d322ec54997893436bc16c7edbad6ef
 </resources>

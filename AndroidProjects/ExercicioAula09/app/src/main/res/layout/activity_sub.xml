@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activitySub_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cursoandroid.firebaseapp.exercicioaula09.SubActivity">
+
+
+    <LinearLayout
+        android:id="@+id/valuesInput_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/first_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:inputType="number"/>
+
+
+        <EditText
+            android:id="@+id/second_value"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valuesInput_layout"
+        android:layout_marginTop="50dp"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/sumValues_button"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="@string/sum_values" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
