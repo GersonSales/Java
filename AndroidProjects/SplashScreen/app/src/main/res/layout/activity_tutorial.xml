@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gerson.udemy.splashscreen.TutorialActivity">
+
+</android.support.constraint.ConstraintLayout>
+=======
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tutorial_relativeLayout"
     android:layout_width="match_parent"
@@ -32,3 +42,4 @@
 
 
 </RelativeLayout>
+>>>>>>> e5ed65065d322ec54997893436bc16c7edbad6ef

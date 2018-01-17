@@ -1,5 +1,11 @@
 package com.gerson.udemy.splashscreen;
 
+<<<<<<< HEAD
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class TutorialActivity extends AppCompatActivity {
+=======
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -16,11 +22,16 @@ import com.gerson.udemy.splashscreen.adapter.TutorialAdapter;
 
 public class TutorialActivity extends AppCompatActivity implements View.OnClickListener{
     private ViewHolder mViewHolder;
+>>>>>>> e5ed65065d322ec54997893436bc16c7edbad6ef
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
+<<<<<<< HEAD
+    }
+}
+=======
 
         hideStatusBar();
         setupViewHolder();
@@ -78,3 +89,4 @@ public class TutorialActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 }
+>>>>>>> e5ed65065d322ec54997893436bc16c7edbad6ef
