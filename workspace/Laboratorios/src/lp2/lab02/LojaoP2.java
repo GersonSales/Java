@@ -6,6 +6,10 @@ public class LojaoP2 {
 	private static int[] qtdProdutos;
 	private static double precoBase = 1.99;
 
+	/**
+	* Este metodo e responsavel imprimir o menu de compras 
+	* perguntado ao usuario por a quantidade de itens.
+	*/
 	public static void menuCompra() {
 		IO.imprimeMensagempl("Digite quantos itens deseja comprar:");
 		int qtdItens = IO.leInteiro();
